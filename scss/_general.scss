@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@700&display=swap');
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    outline:none;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    margin:5rem auto;
+}
+
+
+.btn{
+    background-color: $secondary-color;
+    
+    display: block;
+    color:white;
+}
+
+
+h4{
+    font-size:3rem;
+    color:rgba(black,0.8);
+}
+@media screen and (max-width:600px) {
+    h4{
+        font-size:2rem;
+    }
+ 
+}
+.title p{
+    color:rgba(black,1);
+
+    width:40%;
+    margin:0 auto;
+}
+.service,.specialist, .testimonial,.appointment{
+    text-align: center;
+    padding-top:5rem;
+    color:white;
+    padding-bottom: 3rem;
+    background:rgba($primary-color-variant, 0.3);
+
+}
+// small screems only
+
+@media screen and (max-width:600px) {
+    .container{
+        width:92%;
+    }
+}
+
+//desktop devices only
+@media screen and (min-width:1024px) {
+    .container{
+        width:80%;
+    }
+}

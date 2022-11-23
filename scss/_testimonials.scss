@@ -1,0 +1,85 @@
+.swiper{
+    width: 80%;
+
+    .swiper-wrapper{
+        width:100%;
+        .swiper-slide{
+        border-radius: 14px;
+        @include background-gradient;
+          padding:1.5rem 2rem;
+          width:15rem;
+          text-align: left;
+            &>p{
+               font-size:0.8rem;
+               letter-spacing: 2px;
+               line-height: 0.9rem;
+               margin-bottom: 1rem;
+            }
+
+            .patient-details{
+                display: flex;
+                gap:1rem;
+                .patient-image{
+
+                    img{
+                        border-radius: 50%;
+                        width:2.5rem;
+                    }
+                    
+                }
+           
+            }
+        }
+    }
+}
+
+
+// small screems only
+
+@media screen and (max-width:600px) {
+   .testimonial{
+    padding-top:0rem;
+    padding-bottom: 3rem;
+    p{
+        width:90%;
+        margin:0px auto;
+    }
+    .swiper{
+        width: 80%;
+        margin-top:0;
+        margin-bottom: 0;
+        .swiper-wrapper{
+            width:100%;
+            .swiper-slide{
+            border-radius: 14px;
+            @include background-gradient;
+              padding:1.5rem 2rem;
+              width:15rem;
+              text-align: left;
+                &>p{
+                   font-size:0.8rem;
+                   letter-spacing: 2px;
+                   line-height: 0.9rem;
+                   margin-bottom: 1rem;
+                }
+    
+                .patient-details{
+                    display: flex;
+                    gap:1rem;
+                    .patient-image{
+    
+                        img{
+                            border-radius: 50%;
+                            width:2.5rem;
+                        }
+                        
+                    }
+                   
+                }
+            }
+        }
+    }
+   }
+   
+    
+}

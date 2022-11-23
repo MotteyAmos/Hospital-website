@@ -1,0 +1,146 @@
+.specialist{
+    text-align: center;
+    .container{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap:1rem;
+        article{
+            width:15rem;
+            background-color: #fff;
+            color:black;
+            border-radius: 4px;
+            box-shadow: 0px 0px 5px 5px rgba(black, 0.14);
+            .doctor-img{
+                img{
+                    width: 100%;
+                   
+                    border-radius: 4px;
+                }
+                position: relative;
+                overflow: hidden;
+                &::after{
+                    content:"";
+                    position:absolute;
+                    display: block;
+                    width:100%;
+                    height:100%;
+                    border-radius: 50%;
+                    left:-100%;
+                    top:0;   
+                    background: rgba($primary-color,0.5);
+                    transition: all .5s ease;
+                }
+                .specialist_socials{
+                    z-index: 1;
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap:1.5rem;
+                    top:2rem;
+                    right:1rem;
+                    opacity: 0;
+                    transition: all .5s ease .5s;
+                    i{
+                        font-size: 1.3rem;
+                        color:white;
+                        &:hover{
+                                color:rgba(black, 0.5);
+                        }
+                    }
+                }
+
+                .specialist_whatsapp{
+                    position: absolute;
+                    bottom:0.5rem;
+                    z-index:10;
+                    left:50%;
+                    transform: translateX(-50%);
+                    font-size:2rem;
+                    color:$success-color;
+                    opacity: 0;
+                    transition: all .5s ease .2s;
+
+                }
+
+                &:hover{
+                   &::after{
+                    left:0;
+                    border-radius: 4px;
+                   }
+                   .specialist_socials{
+                    opacity: 1;
+                   }
+                   .specialist_whatsapp{
+                    opacity: 1;
+                   }
+                }
+
+               
+            }
+
+            .doctor-details{
+                padding:1rem;
+                h5{
+                    margin:.5rem;
+                }
+
+               
+            }
+        }
+    }
+}
+
+
+
+
+//small medium
+@media screen and (max-width:1024px) {
+    .specialist{
+        text-align: center;
+        .container{
+            width:98%;
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap:1rem;
+            article{
+                width:15rem;
+                background-color: #fff;
+                color:black;
+                border-radius: 4px;
+                box-shadow: 0px 0px 5px 5px rgba(black, 0.14);
+                .doctor-img{
+                    img{
+                        width: 100%;
+                       
+                        border-radius: 4px;
+                    }
+                   
+                    
+                  
+                    }            
+            }
+        }
+    }
+}
+
+//small screen
+@media screen and (max-width:600px) {
+    .specialist{
+        padding-top:0rem;
+        padding-bottom: 3rem;
+        p{
+            width:90%;
+            margin:0px auto;
+        }
+        .container{
+            grid-template-columns: 1fr;
+            gap:1rem;
+            margin-top:0;
+            margin-bottom: 0;
+            article{
+                width:15rem;
+                margin:0px auto;
+            }
+        }
+    }
+}

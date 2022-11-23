@@ -395,7 +395,7 @@ header .close .nav-items .nav-item:nth-child(1) {
 @media screen and (max-width: 600px) {
   .service {
     padding-top: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
   }
   .service h4 {
     font-size: 2rem;
@@ -511,6 +511,10 @@ header .close .nav-items .nav-item:nth-child(1) {
   }
 }
 @media screen and (max-width: 600px) {
+  .specialist {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+  }
   .specialist p {
     width: 90%;
     margin: 0px auto;
@@ -518,6 +522,8 @@ header .close .nav-items .nav-item:nth-child(1) {
   .specialist .container {
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .specialist .container article {
     width: 15rem;
@@ -551,13 +557,20 @@ header .close .nav-items .nav-item:nth-child(1) {
   border-radius: 50%;
   width: 2.5rem;
 }
+
 @media screen and (max-width: 600px) {
+  .testimonial {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+  }
   .testimonial p {
     width: 90%;
     margin: 0px auto;
   }
   .testimonial .swiper {
     width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .testimonial .swiper .swiper-wrapper {
     width: 100%;
@@ -647,8 +660,14 @@ header .close .nav-items .nav-item:nth-child(1) {
 
 /*small screem*/
 @media screen and (max-width: 600px) {
+  .appointment {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
   .appointment .container {
-    padding: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 2rem;
     grid-template-columns: 1fr;
     gap: 2rem;
     overflow-x: hidden;

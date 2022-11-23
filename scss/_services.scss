@@ -1,0 +1,70 @@
+.service{
+
+    .container{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap:2rem;
+        article{
+            cursor:pointer;
+            @include background-gradient;
+            padding:2rem;
+            border-radius: 4px;
+            & >div{
+                display: flex;
+                .icon{
+                    font-size: 1.5rem;
+                    margin-right: 1rem;
+                }
+    
+                h5{
+                    font-size:1.3rem;
+                }
+            }
+        
+            small{
+                line-height: 1.1rem;
+                letter-spacing: 1px;
+            }
+            transition: all .5s ease;
+            &:hover{
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+
+
+/*===========MEDIUM DEVICES===================*/ 
+@media screen and (max-width:1024px) {
+    .service{
+        .container{
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap:2rem;
+           
+        }
+    }
+    
+}
+
+/*===========SMALL DEVICES===================*/ 
+@media screen and (max-width:600px) {
+    .service{
+        padding-top:3rem;
+        padding-bottom: 3rem;
+        h4{
+            font-size:2rem;
+        }
+        p{
+            width:90%;
+        }
+    
+        .container{
+            grid-template-columns: 1fr;
+        }
+    }
+    
+    }
+    
+
