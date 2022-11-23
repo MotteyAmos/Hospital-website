@@ -45,3 +45,39 @@ for (let i=0; i<navLinks.length; i++){
 }
 
 
+/// Initialize Swiper -->
+
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+
+/// small devices  
+
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        //Responsive Breakpoints
+            breakpoints:{
+        //when window width is >=600px
+        600: {
+          slidersPerView: 2
+        },
+  
+        // when window width is >=600px
+        1024:{
+          slidesPerView:3
+        }
+      }
+
+
+      });
